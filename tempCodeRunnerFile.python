@@ -1,0 +1,27 @@
+from employee import Student
+
+s1=Student("islam",30)
+s2=Student("ahmed",500)
+s3=Student("mohamed",400)
+s4=Student("ali",700)
+s5=Student("sallam",80)
+s6=Student("mona",50)
+student_objects=[s1,s2,s3,s4,s5,s6]
+passstudent=[]
+faildstudent=[]
+students_result={}
+
+for x in student_objects:
+    if x.result()=='pass':
+        passstudent.append(x.name)
+        students_result["pass student"] = passstudent
+    else:
+         faildstudent.append(x.name)
+         students_result["fail student"] = faildstudent
+
+
+
+print(students_result)
+
+
+        
